@@ -48,7 +48,7 @@ echo "$IP" > /usr/bin/vendor_code
 }
 function_verify () {
 unset keybot
-echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ChumoGH${TTcent}VPS 🐲 ◄◄<<=====      \033[0m"
+echo -e "\033[7;49;35m    =====>>►► 🐲 GEN DARKGH${TTcent}PRO 🐲 ◄◄<<=====      \033[0m"
 msg -bar
 [[ "$(echo "$(cat < /etc/nivbot)")" -ge "5" ]] && {
 [[ -e /bin/downloadbot ]] && {
@@ -67,7 +67,7 @@ permited=$(curl -sSL "${link}/ChumoGH/VPSbot/main/TeleBotGen/Control/Control-Bot
   echo -e "\n\n\n\e[31m====================================================="
   echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) FUE RECHAZADA!"
   echo -e "     $link No AUTORIZADA el ACCESO "
-  echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @ChumoGH"
+  echo -e " SI DESEAS USAR EL BOTGEN CONTACTE A @Nefi746"
   echo -e "\e[31m=====================================================\n\n\n\e[0m"
   [[ -e "/bin/ShellBot.sh" ]] && rm -f /bin/ShellBot.sh
     exit 1
@@ -176,7 +176,7 @@ if [[ ! $PIDGEN ]]; then
 [[ $bot_ini = @(s|S|y|Y) ]] && {
 
 	echo -e "[Unit]
-Description=BotGen Service by @ChumoGH
+Description=BotGen Service by @Nefi746
 After=network.target
 StartLimitIntervalSec=0
 
@@ -397,13 +397,13 @@ ID="$(cat /etc/ADM-db/Admin-ID)"
 		echo -e "$bar"
 		read foo
 	} || {
-		MENSAJE="---------📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩--------\n"
-		MENSAJE+="Esto es un mesaje de prueba!\n"
+		MENSAJE="---------♨️𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊♨️--------\n"
+		MENSAJE+="Esto es un mesaje de prueba de DarkGHPRO!\n"
 		MENSAJE+="$bar\n"
 		URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 		curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &>/dev/null
 		clear
-		echo -e "---------📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩--------\n"
+		echo -e "---------♨️𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊♨️--------\n"
 		echo -e "\033[1;37m Mensaje enviado Exitosamente...!"
 		echo -e "$bar"
 		sleep 3s
@@ -464,7 +464,7 @@ read -p " [S/N]: " -e -i s sshsn
 tput cuu1 && tput dl1
 tput cuu1 && tput dl1
 [[ "$sshsn" = @(s|S|y|Y) ]] && addnewmss
-MENSAJE='  ---------📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩--------\n'
+MENSAJE='  ---------♨️𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊♨️--------\n'
 MENSAJE+="$MSS \n "
 echo -e "$bar"
 echo -e "  \033[1;37mPEGA RUTA DE IMAGEN"
@@ -537,7 +537,7 @@ PID_on=$(ps x|grep -v grep|grep "modelid")
 limcont=$(cat /etc/ADM-db/limit) 
 [[ "${limcont}" = "999" ]] && limted=" ∞ " || limted=$(cat /etc/ADM-db/limit)
 msg -bar
-echo -e " \033[7;49;35m ${TTini} 🐲 BotGEN ChumoGH${TTcent}ADM $(cat ${CIDdir}/vercion) 🐲 ◄◄<===   \033[0m"
+echo -e " \033[7;49;35m ${TTini} 💥 BotGEN DarkGH PRO${TTcent}ADM $(cat ${CIDdir}/vercion) 💥 ◄◄<===   \033[0m"
 msg -bar
 echo -e "  - LIMITADOR \033[1;32m ( $limted ) \033[1;37m KILL ID VENCIDOS ${PID_kill} "
 msg -bar 
