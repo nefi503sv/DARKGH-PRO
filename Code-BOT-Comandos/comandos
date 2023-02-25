@@ -52,7 +52,6 @@ comand () {
 				 /[Ii]d|/[Ii]D)myid_src &;;
 				 /[Mm]enu|[Mm]enu|/[Ss]tart|[Ss]tart|[Cc]omensar|/[Cc]omensar)menu_src &;;
 				 /[Aa]yuda|[Aa]yuda|[Hh]elp|/[Hh]elp)ayuda_src &;;
-				 /[Dd]onar|[Dd]onar)donar &;;
 				 /[Ii]mg|[Ii]mg)reply &;;
 				 /[Pp]rice|[Pp]price|[Pp]rices|/[Pp]rices)prices_on &;;
 				 /sendid)send_ID;;
@@ -70,7 +69,6 @@ comand () {
 				 /[Kk]eygen)gerar_key &;;
 				 /[Bb]anIP|[Bb]anIP)reply &;;
 				 /[Pp]rice|[Pp]price|[Pp]rices|/[Pp]rices)prices_on &;;
-				 /[Dd]onar|[Dd]onar)donar &;;
 				 /upmake)dupdate2;;
 				 /*|*)invalido_fun &;;
 			 esac
@@ -104,7 +102,6 @@ comand () {
 					 /[Cc]hat|[Ch]hat)msj_chat &;;
 					 /[Ii]mg|[Ii]mg)reply &;;
 					 /[Aa]dd|/[Dd]el)reply &;;
-					 /[Aa]ddrev)reply &;;
 					 /[Bb]uscar|[Bb]uscar)reply &;;
 					 /[Bb]anIP|[Bb]anIP)reply &;;
 					 /[Cc]atip|[Cc]atip)list_IP &;;
@@ -117,7 +114,6 @@ comand () {
 			 		 /[Ii]nstal)link_src &;;
 			 		 /[Cc]ache)cache_src &;;
 					 /[Uu]pdate|/[Aa]ctualizar)update &;;
-					 /[Dd]onar|[Dd]onar)donar_OnOff &;;
 					 /[Pp]rice|[Pp]price|[Pp]rices|/[Pp]rices)prices_on &;;
 					 /upmake)dupdate2;;
 			 		 /*|*)invalido_fun &;;
