@@ -1,5 +1,5 @@
 #!/bin/bash
-[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/msg)
+[[ -e /bin/ejecutar/msg ]] && source /bin/ejecutar/msg || source <(curl -sSL https://raw.githubusercontent.com/nefi503sv/DARKGH-PRO/main/Otros/msg)
 bar="$(msg -bar3)"
 [[ -e /etc/systemd/system/btkill.service ]] && systemctl restart btkill.service &>/dev/null
 tr=${id}
