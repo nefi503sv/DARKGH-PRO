@@ -1,6 +1,6 @@
 #!/bin/bash
-#CREADOR Henry Chumo | 06/06/2022
-#Alias : @ChumoGH
+#CREADOR Nefi746 | 06/06/2022
+#Alias : @Nefi746
 # -*- ENCODING: UTF-8 -*-
 
 dropbear_pids () {
