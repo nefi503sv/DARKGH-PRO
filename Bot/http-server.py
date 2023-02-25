@@ -142,7 +142,7 @@ ID="$(cat ${FILE2}.name)" && ID="$(echo $ID | awk '{print $1}' | sed -e 's/[^0-9
 TOKEN="$(cat /etc/ADM-db/token)"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
 MENSAJE="  =======================================\n"
-MENSAJE+=" ========📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩========\n"
+MENSAJE+=" ========♨️𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊♨️========\n"
 MENSAJE+=" =======================================\n"
 MENSAJE+=" ${_key}\n"
 MENSAJE+=" =========== ☝️ USADA ☝ ============\n"
@@ -153,7 +153,7 @@ MENSAJE+=" =======================================\n"
 MENSAJE+=" IP : $USRIP <-> HORA : $_hora\n"
 MENSAJE+=" =======================================\n"
 MENSAJE+='       🔰 Bot generador de key 🔰\n'
-MENSAJE+='           ⚜ By @ChumoGH ⚜ \n'
+MENSAJE+='           ⚜ By @Nefi746 ⚜ \n'
 MENSAJE+=" =======================================\n"
 #curl -s -X POST $urlBOT -d chat_id=$ID -d text="$(echo -e "$MENSAJE")" &>/dev/null
 curl -s --max-time 10 -d "chat_id=$ID&disable_web_page_preview=1&text=$(echo -e "$MENSAJE")" $urlBOT &>/dev/null
