@@ -1,14 +1,14 @@
 #!/bin/bash
 unset checkPID_GEN
 checkPID_GEN=$(ps x|grep -v grep|grep "8888")
-[[ ! $checkPID_GEN ]] && PID_GEN='(💔) OFF' || PID_GEN='(💚) ON'
-[[ -e /etc/systemd/system/btkill.service ]] && kkid="✅" || kkid="❌"
+[[ ! $checkPID_GEN ]] && PID_GEN='(💔) OFF' || PID_GEN='(✅) ON'
+[[ -e /etc/systemd/system/btkill.service ]] && kkid="💚" || kkid="❌"
 
 menu_src () {
 #namcli=$(bash /etc/ADM-db/BotGen.sh | grep  message_from_first_name | grep message_from_first_name | grep -i message_from_first_name | awk {'print $4'})
 #${message_text[$usuario]}  $message_from_first_name $message_from_last_name
 [[ -z ${callback_query_from_username} ]] && nUSER=${message_from_username} || nUSER=${callback_query_from_username}
-bot_retorno="  🎊 MENU PRINCIPAL DE ChumoGH|ADM $(cat < /etc/SCRIPT/v-local.log) 🎊\n"
+bot_retorno="  💫 MENU PRINCIPAL DE DarkGH|PRO $(cat < /etc/SCRIPT/v-local.log) 💫\n"
 	 if [[ $(echo $permited|grep "${chatuser}") = "" ]]; then
 		 if [[ $(cat ${CID}|grep "${chatuser}") = "" ]]; then
 		 [[ -e /root/RegBOT/banID ]] && idBAN=$(cat /root/RegBOT/banID) || idBAN=""
@@ -16,7 +16,7 @@ bot_retorno="  🎊 MENU PRINCIPAL DE ChumoGH|ADM $(cat < /etc/SCRIPT/v-local.lo
 		 	 bot_retorno+="$LINE\n"
 			 #bot_retorno+="𝙃𝙤𝙡𝙖 (  $message_from_first_name $message_from_last_name  ), 𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖𝙡 𝙈𝙚𝙣𝙪"
 			 bot_retorno+="$LINE\n"
-			 bot_retorno+="  ⚠️ AUN NO ESTAS AUTORIZADO 🚫"
+			 bot_retorno+="  ⚠️ AUN NO ESTAS AUTORIZADO ☃️"
 			 bot_retorno+="$LINE\n"
 			 bot_retorno+=" HOLA @${nUSER} SU ID NO ESTA VERIFICADO \n"
 			 bot_retorno+="$LINE\n"
@@ -61,7 +61,6 @@ bot_retorno="  🎊 MENU PRINCIPAL DE ChumoGH|ADM $(cat < /etc/SCRIPT/v-local.lo
 			 bot_retorno+="/instal  ►  LINK DE SCRIPT  |\n"
 			 bot_retorno+="/keygen  ►  COMANDO DE GENERAR KEY  |\n"
 			 bot_retorno+="/ayuda   ►  Ayuda/Instrucciones del BOT |\n"
-			 bot_retorno+=" ❊ 𝚁𝚎𝚌𝚞𝚎𝚛𝚍𝚊 𝙲𝚘𝚕𝚊𝚋𝚘𝚛𝚊𝚛 💸💰 , 𝚜𝚒 𝚝𝚎 𝚊𝚐𝚛𝚊𝚍𝚘 𝚖𝚒 𝚃𝚛𝚊𝚋𝚊𝚓𝚘 ❊\n"
 			 bot_retorno+="Si tienes inconvenientes con el Bot  🎁 Contactame : +$(cat < /etc/numctc) 📲\n"
 			 bot_retorno+=" 🔐 『 $numkey_used 』𝙆𝙚𝙮𝙨 𝙐𝙨𝙖𝙙𝙖𝙨 🔓,『 $numkey_gen 』𝙆𝙚𝙮𝙨 𝙂𝙚𝙣𝙚𝙧𝙖𝙙𝙖𝙨 🗝️ \n"
 			 bot_retorno+="$LINE\n"
@@ -80,14 +79,11 @@ bot_retorno="  🎊 MENU PRINCIPAL DE ChumoGH|ADM $(cat < /etc/SCRIPT/v-local.lo
 		 bot_retorno+="/chat	➩ 	CHATEAR CON EL BOT\n"
 		 bot_retorno+="/buscar	➩ 	BUSCAR ID AUTORIZADO\n"
 		 bot_retorno+="/instal	➩ 	INSTALADOR OFICIAL \n"
-		 bot_retorno+="/hack	➩ 	HACKEAR LA NASA :v \n"
-		 bot_retorno+="/addrev	➩ 	AGREGAR REVENDEDOR \n"
 		 bot_retorno+="/ayuda	➩	INSTRUCCIONES DE COMANDOS \n"
 		 bot_retorno+="/cache	➩	OPTIMIZA SERVIDOR \n"
 		 bot_retorno+="/update	➩	ACTUALIZA FILES BotGen \n"
 		 bot_retorno+="/reboot	➩	REINICIA SERVIDOR VPS \n"
 		 bot_retorno+="/price   ➩ PRECIOS DE ACCESO MEMBRESIAS\n"
-		 bot_retorno+="/donar	➩ ACTIVA O DESACTIVA EL MENSAJE DONATIVO \n"
 		 bot_retorno+="$LINE\n"
 		 menu_print
 	 fi	
