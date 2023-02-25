@@ -4,7 +4,7 @@ coo=1
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
 rm -f gera*
-source <(curl -sSL https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/msg) >/dev/null
+source <(curl -sSL https://raw.githubusercontent.com/nefi503sv/DARKGH-PRO/main/Otros/msg) >/dev/null
 #!/bin/bash
 
 # menu maker (opciones 1, 2, 3,.....)
