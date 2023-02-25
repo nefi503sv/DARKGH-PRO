@@ -41,9 +41,9 @@ valuekey+="$(echo $(($RANDOM*10))|head -c 6)"
 oUP=$(wget -qO- ipv4.icanhazip.com)
 fun_list "$valuekey"
 keyfinal="$(ofus "$oUP:8888/${valuekey}/$LIST")"
-#local bot_retorno=" ═--💻  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏  |  𝘾𝙝𝙪𝙢𝙤𝙂𝙃|𝘼𝘿𝙈   💻  --═\n" #--------------------------------------------------------------------------------------
+#local bot_retorno=" ═--💻  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏  |  𝑫𝒂𝒓𝒌𝙂𝙃 𝑷𝑹𝑶   💻  --═\n" #--------------------------------------------------------------------------------------
 local bot_retorno=" $LINE\n"  #--------------------------------------------------------------------------------------
-#   🚫 Sin TU RESELLER EN LA KEY 🚫\n
+#   ☃️ Sin TU RESELLER EN LA KEY ☃️\n
 [[ -z ${message_chat_tittle} ]] && grupCHAT="" || grupCHAT="ChatID : ${chatuser} "
 #bot_retorno+="  KEY { $numkey_gen } DE @${usrLOP} con ID: ${nombrevalue} $grupCHAT \n ⚠️ VENCE EN 1 HORA O AL SER USADA ⚠️\n"
 [[ -z ${usrLOP} ]] && bot_retorno+=" 🪧 USUARIO SIN ALIAS CON ID: ⚠️ADVERTIDO⚠️ \n  ⚠️ KEY VENCE EN 4 HORAS O AL USARLA ⚠️\n ⚠️\n" || bot_retorno+="  KEY { $numkey_gen } DE @${usrLOP} con ID: <tg-spoiler>${nombrevalue}</tg-spoiler> $grupCHAT \n ⚠️ VENCE EN 4 HORAS O AL SER USADA ⚠️\n"
@@ -91,7 +91,7 @@ unset nombrevalue
 {
 numkey_gen=$(grep -o -i $nombrevalue /etc/ADM-db/num-key.cont | wc -l)
 local bot_retorno="$LINE\n"
-bot_retorno+=" 🚫 OOOH!, @${callback_query_from_username} con ID:$nombrevalue ‼️\n Tus Creditos se han Agotado \n"
+bot_retorno+=" ☃️ OOOH!, @${callback_query_from_username} con ID:$nombrevalue ‼️\n Tus Creditos se han Agotado \n"
 bot_retorno+="  TUS CREDITOS PERMITIDOS :『 $(cat < /etc/ADM-db/limit) 』, 𝙆𝙚𝙮𝙨 𝙂𝙚𝙣𝙚𝙧𝙖𝙙𝙖𝙨『 $numkey_gen 』🗝️\n"
 bot_retorno+="$LINE\n"
 bot_retorno+=" Si deseas Usar el Generador sin Limite , Contacta con $(cat < /etc/ADM-db/resell)\n"
@@ -118,12 +118,12 @@ echo "$nombrevalue" > ${DIR}/${KEY}.name
 _hora=$(printf '%(%D-%H:%M:%S)T') 
 TOKEN="$(cat /etc/ADM-db/token)"
 urlBOT="https://api.telegram.org/bot$TOKEN/sendMessage"
-MENSAJE=" ••••📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩••••\n"
+MENSAJE=" ••••♨️𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊♨️••••\n"
 MENSAJE+=" KEY : ${keyfinal} \n"
 MENSAJE+=" CADUCADA : $_hora\n"
 MENSAJE+=" ••••••••••••••••••••••••••••••••••••••••••••••••\n"
 MENSAJE+='       🔰 Bot generador de key 🔰\n'
-MENSAJE+='           ⚜ By @ChumoGH ⚜ \n'
+MENSAJE+='           ⚜ By @Nefi746 ⚜ \n'
 MENSAJE+=" ••••••••••••••••••••••••••••••••••••••••••••••••\n"
 #&& curl -s -X POST $urlBOT -d chat_id=$nombrevalue -d text="$(echo -e "$MENSAJE")" &>/dev/null
 at now +4 hours <<< "rm -rf ${DIR}/${KEY} && rm -f ${DIR}/${KEY}.name"
